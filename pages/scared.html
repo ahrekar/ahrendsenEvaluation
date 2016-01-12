@@ -1,0 +1,49 @@
+<!doctype html>
+
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TOVA Test</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="/home/karl/Dropbox/programming/websites/websiteTools/bootstrap-3.3.5/dist/css/bootstrap.min.css">
+  </head>
+  <body>
+  <div id="headline">
+    <header>
+      <h1>TOVA Test</h1>
+    </header>
+  </div>
+  
+  <ul class="list-group">
+    <li class="list-group-item">
+      Question 1<br>
+      When my child feels frightened, it is hard for him/her to breathe.<br>
+      <div class="container">
+        <div class="row">
+          <div class="btn-group btn-group-justified" data-toggle="buttons">
+	    <label class="btn btn-primary">
+            <input type="radio" name="options" id="q1r1" autocomplete="off">Not true or <br>hardly ever true.	    
+	    </label>
+	    <label class="btn btn-primary">
+            <input type="radio" name="options" id="q1r2" autocomplete="off">Somewhate true or <br>sometimes true.
+	    </label>
+	    <label class="btn btn-primary">
+            <input type="radio" name="options" id="q1r3" autocomplete="off">Very true or <br>often true.
+	    </label>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li class="list-group-item">Question 2</li>
+    <li class="list-group-item">Question 3</li>
+  </ul>
+  
+  <script>
+  $(document).read(function () {
+    $('#q1r1').on('click', function () {
+      $(this).radio('toggle')
+    })
+  });
+  </script>
+  </body>
+</html>
